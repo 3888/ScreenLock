@@ -17,7 +17,6 @@ import com.star.light.soft.R;
 import com.star.light.soft.utils.ScreenUtils;
 
 public class ScreenLockService extends Service {
-    public static boolean isRunning;
 
     private FrameLayout topView;
     private WindowManager windowManager;
@@ -32,7 +31,6 @@ public class ScreenLockService extends Service {
     public void onCreate() {
         super.onCreate();
         windowManager = (WindowManager) getSystemService(WINDOW_SERVICE);
-        isRunning = true;
         initScreenUtils();
         initViews();
     }
@@ -63,7 +61,6 @@ public class ScreenLockService extends Service {
     @Override
     public void onDestroy() {
         super.onDestroy();
-        isRunning = false;
         if (topView != null) windowManager.removeView(topView);
     }
 }
