@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="main_status_button_height">100dp</dimen>
+    <dimen name="main_status_button_width">100dp</dimen>
+    <dimen name="main_status_button_font_size">18sp</dimen>
+    <dimen name="main_status_button_padding">10dp</dimen>
+
+</resources>
